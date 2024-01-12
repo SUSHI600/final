@@ -1,4 +1,3 @@
-<?php require 'db.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +8,11 @@
 <body>
 
 <h2>トレーニングを追加</h2>
-<a href=".php">トップに戻る</a>
+<a href="top.php">トップに戻る</a>
 <hr>
-<form action="" method="post">
-    部位：<input type="text" name="newpart">
-    <br>
-    トレーニング名：<input type="text" name="newtraining">
-    <br>
+<form action="add2.php" method="post">
+    部位：<input type="text" name="part"><br>
+    トレーニング名：<input type="text" name="training"><br>
     <button type="submit" name="action" value="send">登録</button>
     <br>
 </form>
