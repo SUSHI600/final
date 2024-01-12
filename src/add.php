@@ -6,6 +6,7 @@
     <title>final</title>
 </head>
 <body>
+<?php require 'db.php' ?>
 <h2>トレーニングを追加</h2>
 <a href=".php">トップに戻る</a>
 <hr>
