@@ -1,3 +1,4 @@
+<?php require 'db.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,6 @@
     <title>final</title>
 </head>
 <body>
-<?php require 'db.php' ?>
 <h2>削除</h2>
 <a href="top.php">トップに戻る</a>
 <hr>
