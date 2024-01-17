@@ -8,12 +8,9 @@
 <body>
 
 <h2>トレーニングを追加</h2>
-<a href="top.php">トップに戻る</a>
-<hr>
 <form action="add2.php" method="post">
-    部位：<input type="text" name="part"><br>
-    トレーニング名：<input type="text" name="training"><br>
-    <button type="submit" name="action" value="send">登録</button>
+    トレーニング名：<input type="text" name="menu_name"><br>
+    <button type="submit">登録</button>
     <br>
 </form>
 </body>

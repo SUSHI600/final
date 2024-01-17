@@ -8,6 +8,15 @@
 </head>
 <body>
     <h2>トレーニング一覧</h2>
-    <a href="top.php">トップに戻る</a>
+    <?php
+    $pdo = new PDO($connect, USER, PASS);
+    foreach ($pdo->query('SELECT * FROM tranig') as $row) {
+        echo '<p>';
+        echo $row['menu_id'],':';
+        echo $row['menu_name'];
+        echo '</p>';
+    }
+    ?>
+    <button onclick="location.href='top.php'">TOPへ戻る</button>
 </body>
 </html>

@@ -1,17 +1,27 @@
 <?php require 'db.php' ?>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>final</title>
-</head>
-<body>
-<h2>削除</h2>
-<a href="top.php">トップに戻る</a>
-<hr>
-<form action=".php" method="post">
-    <button type="submit" name="delete-result">削除</button>
-</form>
-</body>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>削除</title>
+	</head>
+	<body>
+	<table>
+    <th>メニューID</th><th>トレーニング名</th>
+<?php
+    $pdo=new PDO($connect, USER, PASS);
+    foreach ($pdo->query('select * from tranig') as $row) {
+        echo '<tr>';
+        echo '<td>',$row['menu_id'], '</td>';
+        echo '<td>',$row['menu_name'], '</td>';
+        echo '<td>';
+        echo '<a href="delete2.php?menu_id=',$row['menu_id'],'">削除</a>';
+        echo '</td>';
+        echo '</tr>';
+        echo "\n";
+    }
+?> 
+</table>
+<button onclick="location.href='top.php'">TOPへ戻る</button>
+    </body>
 </html>
