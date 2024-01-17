@@ -6,4 +6,4 @@
 
 システム名：トレーニングメニュー管理システム
 
-URL　　　：https://mysqladmin.lolipop.jp/pma5/index.php?route=/database/structure&db=LAA1516892-final&server=108
+URL　　　：https://aso2201025.namaste.jp/GitHub/final/src/top.php
